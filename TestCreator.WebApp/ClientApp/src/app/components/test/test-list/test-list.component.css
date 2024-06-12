@@ -1,0 +1,66 @@
+.card {
+  margin-bottom: 12px;
+}
+.card .card-header {
+  color: #fefefe;
+}
+.card .card-header .form-inline .form-group {
+  margin: 3px 3px 3px 3px;
+}
+.card .card-header .faicon {
+  float: right;
+  font-size: 41px;
+  color: #d6d6d6;
+}
+.card .card-body {
+  padding: 0;
+}
+.card .card-body .list-group {
+  margin: 0;
+}
+.card .card-body .list-group .list-group-item {
+  padding: 6px;
+  overflow: auto;
+  cursor: pointer;
+}
+.card .card-body .list-group .list-group-item:hover {
+  background-color: #dae9f5;
+}
+.card .card-body .list-group .list-group-item:hover:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-weight: 900;
+  content: "\f00c";
+  float: right;
+  font-size: 30px;
+  margin: 4px 5px 0 0;
+  color: #60a777;
+}
+.card .card-body .list-group .list-group-item img {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #707d8c;
+  padding: 2px;
+  margin: 0 6px 0 0;
+}
+.card.latest {
+  border-color: #384a5d;
+}
+.card.latest .card-header {
+  background-color: #384a5d;
+}
+.card.random {
+  border-color: #617992;
+}
+.card.random .card-header {
+  background-color: #617992;
+}
+.card.byTitle {
+  border-color: #4b657f;
+}
+.card.byTitle .card-header {
+  background-color: #4b657f;
+}

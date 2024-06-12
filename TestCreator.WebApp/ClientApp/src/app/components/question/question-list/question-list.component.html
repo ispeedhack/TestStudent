@@ -1,0 +1,37 @@
+<h3>Questions</h3>
+<div *ngIf="questions.length > 0">
+  <div class="table-responsive">
+    <table class="table table-hover questions">
+      <thead>
+      <tr>
+        <th>Content</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let question of questions">
+        <td>{{question.Text}}</td>
+        <td>
+          <button (click)="onEdit(question)" class="btn btn-sm btn-warning">
+            <fa-icon slot="start" [icon]="faEdit"></fa-icon>
+            &nbsp; Edit
+          </button>
+          <button (click)="onDelete(question)" class="btn btn-sm btn-danger">
+            <fa-icon slot="start" [icon]="faTrash"></fa-icon>
+            &nbsp; Remove
+          </button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div *ngIf="questions.length == 0" class="form-text">
+  This test doesn't have any questions yet. Use <strong>Add question</strong> to create one !
+</div>
+<button (click)="onCreate()" class="btn btn-sm btn-primary">
+  <fa-icon slot="start" [icon]="faPlus"></fa-icon>
+  &nbsp; Add question
+</button>
+<br />

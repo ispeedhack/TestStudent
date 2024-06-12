@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "nxPfgqSdKNySWEALcwgUUvfGb0IlT4U2Gw4tay07MAI=",
+  "Source": "TestCreator.WebApp",
+  "BasePath": "_content/TestCreator.WebApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TestCreator.WebApp\\wwwroot",
+      "Source": "TestCreator.WebApp",
+      "ContentRoot": "C:\\Users\\1spee\\Desktop\\TestCreator_Angular-master\\TestCreator\\TestCreator.WebApp\\wwwroot\\",
+      "BasePath": "_content/TestCreator.WebApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\1spee\\Desktop\\TestCreator_Angular-master\\TestCreator\\TestCreator.WebApp\\wwwroot\\favicon.ico",
+      "SourceId": "TestCreator.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1spee\\Desktop\\TestCreator_Angular-master\\TestCreator\\TestCreator.WebApp\\wwwroot\\",
+      "BasePath": "_content/TestCreator.WebApp",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    }
+  ]
+}

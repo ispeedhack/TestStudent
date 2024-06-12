@@ -1,0 +1,22 @@
+<div class="card {{class}}">
+  <div class="card-header">
+    <div class="form-inline">
+      <div class="form-group">
+        <fa-icon slot="start" [icon]="getIcon()"></fa-icon>
+      </div>
+      <div class="form-group">
+        <h4>{{title}}</h4>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let test of tests"
+          [class.selected]="test === selectedTest"
+          (click)="onSelect(test)">
+        <img src="https://picsum.photos/id/{{test.Id}}/50/50/" alt="{{test.Title}}" class="rounded-circle"/>
+        <span>{{test.Title}}</span>
+      </li>
+    </ul>
+  </div>
+</div>

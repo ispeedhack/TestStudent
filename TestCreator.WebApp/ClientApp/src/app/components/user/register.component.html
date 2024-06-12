@@ -1,0 +1,80 @@
+<div class="register-container">
+  <img id="register-img" class="register-img"
+       src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+  <h2 class="register-title">{{title}}</h2>
+  <form [formGroup]="form"
+        (ngSubmit)="onSubmit()"
+        class="register-form was-validated">
+    <div *ngIf="form.errors?.auth"
+         class="error-card form-text">
+      {{form.errors.register}}
+    </div>
+    <div class="form-group"
+         [ngClass]="{ 'has-error has-feedback' : hasError('Username') }">
+      <input type="text" required autofocus
+             formControlName="Username"
+             class="form-control"
+             placeholder="Enter username..." />
+      <div *ngIf="hasError('Username')"
+           class="form-text">
+        Please enter correct username.
+      </div>
+    </div>
+    <div class="form-group"
+         [ngClass]="{ 'has-error has-feedback' : hasError('Email') }">
+      <input type="text" required autofocus
+             formControlName="Email"
+             class="form-control"
+             placeholder="Enter e-mail..." />
+      <div *ngIf="hasError('Email')"
+           class="form-text">
+        Please enter correct e-mail.
+      </div>
+    </div>
+    <div class="form-group"
+         [ngClass]="{ 'has-error has-feedback' : hasError('Password') }">
+      <input type="password" required
+             formControlName="Password"
+             class="form-control"
+             placeholder="Enter password..." />
+      <div *ngIf="hasError('Password')"
+           class="form-text">
+        Please enter correct password.
+      </div>
+    </div>
+    <div class="form-group"
+         [ngClass]="{ 'has-error has-feedback' : hasError('PasswordConfirm') }">
+      <input type="password" required
+             formControlName="PasswordConfirm"
+             class="form-control"
+             placeholder="Reenter password..." />
+      <div *ngIf="hasError('PasswordConfirm')"
+           class="form-text">
+        Password and password confirm field have different values.
+      </div>
+    </div>
+    <div class="form-group"
+         [ngClass]="{ 'has-error has-feedback' : hasError('DisplayName') }">
+      <input type="text" required autofocus
+             formControlName="DisplayName"
+             class="form-control"
+             placeholder="Enter display name..." />
+      <div *ngIf="hasError('DisplayName')"
+           class="form-text">
+        Please enter correct  display name.
+      </div>
+    </div>
+    <div class="text-center">
+      <button type="submit"
+              [disabled]="form.invalid"
+              class="btn btn-success">
+        Register
+      </button>
+      <button type="submit"
+              (click)="onBack()"
+              class="btn btn-primary">
+        Cancel
+      </button>
+    </div>
+  </form>
+</div>

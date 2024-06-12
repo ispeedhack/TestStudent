@@ -1,0 +1,37 @@
+<h2>{{title}}</h2>
+<div class="answer-edit">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" class="was-validated">
+  <div class="form-group" [ngClass]="{ 'has-error has-feedback' : hasError('Text') }">
+    <label for="text">Text:</label>
+    <br/>
+    <textarea id="text" formControlName="Text" required placeholder="Enter text of the answer here..." class="form-control"></textarea>
+    <div *ngIf="hasError('Text')"
+         class="form-text">
+      This field is required. Please enter correct title.
+    </div>
+  </div>
+  <div class="form-group" [ngClass]="{ 'has-error has-feedback' : hasError('Value') }">
+    <label for="value">Point value:</label>
+    <br/>
+    <select id="value" required formControlName="Value" class="form-control">
+      <option value="Select value..."></option>
+      <option *ngFor="let num of [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]" [value]="num">{{num}}</option>
+    </select>
+    <div *ngIf="hasError('Value')"
+         class="form-text">
+      Select value from -5 to 5.
+    </div>
+  </div>
+  <div class="form-group commands">
+    <button *ngIf="editMode" type="submit" [disabled]="form.invalid" class="btn btn-primary">
+      Save changes
+    </button>
+    <button *ngIf="!editMode" type="submit" [disabled]="form.invalid" class="btn btn-primary">
+      Create answer
+    </button>
+    <button *ngIf="!editMode" type="submit" (click)="onBack()" class="btn btn-dark">
+      Cancel
+    </button>
+  </div>
+  </form>
+</div>

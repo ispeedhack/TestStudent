@@ -1,0 +1,14 @@
+C:\Users\1spee\Desktop\TestCreator_Angular-master\TestCreator\TestCreator.Data\bin\Debug\net6.0\TestCreator.Data.deps.json
+C:\Users\1spee\Desktop\TestCreator_Angular-master\TestCreator\TestCreator.Data\bin\Debug\net6.0\TestCreator.Data.runtimeconfig.json
+C:\Users\1spee\Desktop\TestCreator_Angular-master\TestCreator\TestCreator.Data\bin\Debug\net6.0\TestCreator.Data.dll
+C:\Users\1spee\Desktop\TestCreator_Angular-master\TestCreator\TestCreator.Data\bin\Debug\net6.0\TestCreator.Data.pdb
+C:\Users\1spee\Desktop\TestCreator_Angular-master\TestCreator\TestCreator.Data\obj\Debug\net6.0\TestCreator.Data.csproj.AssemblyReference.cache
+C:\Users\1spee\Desktop\TestCreator_Angular-master\TestCreator\TestCreator.Data\obj\Debug\net6.0\TestCreator.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1spee\Desktop\TestCreator_Angular-master\TestCreator\TestCreator.Data\obj\Debug\net6.0\TestCreator.Data.AssemblyInfoInputs.cache
+C:\Users\1spee\Desktop\TestCreator_Angular-master\TestCreator\TestCreator.Data\obj\Debug\net6.0\TestCreator.Data.AssemblyInfo.cs
+C:\Users\1spee\Desktop\TestCreator_Angular-master\TestCreator\TestCreator.Data\obj\Debug\net6.0\TestCreator.Data.csproj.CoreCompileInputs.cache
+C:\Users\1spee\Desktop\TestCreator_Angular-master\TestCreator\TestCreator.Data\obj\Debug\net6.0\TestCreator.Data.dll
+C:\Users\1spee\Desktop\TestCreator_Angular-master\TestCreator\TestCreator.Data\obj\Debug\net6.0\refint\TestCreator.Data.dll
+C:\Users\1spee\Desktop\TestCreator_Angular-master\TestCreator\TestCreator.Data\obj\Debug\net6.0\TestCreator.Data.pdb
+C:\Users\1spee\Desktop\TestCreator_Angular-master\TestCreator\TestCreator.Data\obj\Debug\net6.0\TestCreator.Data.genruntimeconfig.cache
+C:\Users\1spee\Desktop\TestCreator_Angular-master\TestCreator\TestCreator.Data\obj\Debug\net6.0\ref\TestCreator.Data.dll

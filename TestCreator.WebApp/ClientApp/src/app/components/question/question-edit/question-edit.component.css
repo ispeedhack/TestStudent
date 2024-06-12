@@ -1,0 +1,17 @@
+.question-edit {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .question-edit {
+    width: 100%;
+  }
+}
+.question-edit textarea {
+  min-height: 100px;
+}
+.question-edit .commands {
+  margin-top: 20px;
+}
+.question-edit .commands .btn {
+  margin: 0px 3px 0px 3px;
+}

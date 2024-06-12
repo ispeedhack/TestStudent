@@ -1,0 +1,66 @@
+.result {
+  position: relative;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+
+  .result-info-block {
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 80px;
+    background: #f0f0f0;
+    z-index: 0;
+    padding: 60px 0 30px 0;
+
+    .result-heading {
+      width: 100%;
+      text-align: center;
+      margin: 10px 0 0;
+    }
+
+    .navigation {
+      margin: 20px 15px 0 15px;
+      padding: 0;
+      list-style: none;
+      border-bottom: 1px solid #a3aab1;
+
+      li {
+        display: inline-block;
+        margin: 0 0 -6px 0;
+        padding: 0;
+
+        a {
+          background: transparent;
+          border-radius: 10px 10px 0 0;
+          padding: 10px 30px;
+          float: left;
+        }
+
+        &.active a {
+          background: #4189C7;
+          color: #fff;
+        }
+      }
+    }
+
+    .commands {
+      border-top: 1px solid #dddddd;
+      width: 80%;
+      padding: 15px 0 0 0;
+      margin: 15px auto 0 auto;
+
+      .btn {
+        min-width: 140px;
+        margin: 0 10px;
+      }
+
+      .edit {
+        border-top: 1px solid #dddddd;
+        width: 80%;
+        padding: 15px 0 0 0;
+        margin: 15px auto 0 auto;
+      }
+    }
+  }
+}

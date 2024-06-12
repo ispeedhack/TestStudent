@@ -1,0 +1,52 @@
+<h3>Test: {{title}}</h3>
+<div *ngIf="testAttempt.TestAttemptEntries.length > 0">
+  <div class="table-responsive">
+
+    <div *ngIf="selectedTestAttemptEntry">
+      {{selectedTestAttemptEntry.Question.Text}}
+      <table class="table table-hover">
+        <tbody>
+          <tr *ngFor="let Answer of selectedTestAttemptEntry.Answers">
+            <td>
+
+              <div class="form-group" *ngIf="selectedTestAttemptEntry.IsMultitipleChoise">
+                  <label class="form-control">
+                    <input type="checkbox" [checked]="Answer.Checked" [(ngModel)]="Answer.Checked"/>
+                    {{Answer.Text}}
+                  </label>
+              </div>
+              <div class="form-group" *ngIf="!selectedTestAttemptEntry.IsMultitipleChoise">
+                <label for="answer_{{Answer.Id}}" class="form-control">
+                  <input id="answer_{{Answer.Id}}" type="radio" [value]="Answer.Id" [(ngModel)]="radioSelected"
+                         (change)="handleChange($event)"/>
+                  {{Answer.Text}}
+                </label>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
+      <div class="commands">
+        <button [disabled]="selectedTestAttemptEntryIndex == 0" type="button" (click)="onPrevious()" class="btn btn-dark">
+          <fa-icon slot="start" [icon]="faArrowLeft"></fa-icon>
+          Previous
+        </button>
+        <button type="button" (click)="onFinish()" class="btn btn-dark">
+          Finish         
+          <fa-icon slot="start" [icon]="faCheckCircle"></fa-icon>
+        </button>
+        <button [disabled]="selectedTestAttemptEntryIndex == testAttempt.TestAttemptEntries.length - 1"
+                type="button" (click)="onNext()" class="btn btn-dark">
+          Next
+          <fa-icon slot="start" [icon]="faArrowRight"></fa-icon>
+        </button>
+      </div>
+    </div>
+
+
+    </div>
+</div>
+<div *ngIf="testAttempt.TestAttemptEntries.length == 0">
+  Test cannot be started because it has no questions defined.
+</div>

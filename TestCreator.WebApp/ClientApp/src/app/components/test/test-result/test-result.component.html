@@ -1,0 +1,17 @@
+<div class="result">
+  <div class="result-info-block">
+    <div class="result-heading">
+      <h2>{{result.Title}}</h2>
+      <h2>Your score: {{result.Score}}/{{result.MaximalPossibleScore}}</h2>
+    </div>
+
+    <div class="commands">
+      <a [routerLink]="['/test/start', result.TestId]" class="btn btn-success">
+        <fa-icon slot="start" [icon]="faRedo"></fa-icon>
+        &nbsp; Repeat test
+      </a>
+    </div>
+
+  </div>
+
+</div>
